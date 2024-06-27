@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            
+        }
+        body{
+            background-color: rgb(27, 27, 26);
+            
+            display: block;
+            text-align: -webkit-center;
+            unicode-bidi: isolate;
+        }
+        .header{
+            text-align: center;
+            background-image: blue;
+            color: azure;
+            padding: 5px;
+
+        }
+        button{
+            background-color: brown;
+            color: bisque;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            transition-property: background-color;
+            transition-delay: 0.8s;
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+        img{
+            height: 200;
+            width: 150;
+            margin-top: 8%;
+            margin-bottom: 8px;
+            position: relative;
+            transition: all3s;
+
+        }
+        #translate:hover~.main img{
+            transform: translate(50px,80px);
+        }
+        #rotate:hover~.main img{
+            transform: rotate(90deg);
+        }
+        #skew:hover~.main img{
+            transform: skewY(20deg);
+        }
+        #scale:hover~.main img{
+            transform: scale(2);
+        }
+       
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1><u>TRANSFORMS IMAGES</u></h1></div><br>
+        <div class="content">
+    <button id="translate">TRANSLATE</button>
+    <button id="rotate">ROTATE</button>
+    <button id="skew">SKEW</button>
+    <button id="scale">SCALE</button><br><br>
+    <div class="main"><img src="https://img.freepik.com/free-photo/cute-domestic-cat-staring-camera-generative-ai_188544-12496.jpg" height="100"></div>
+    </div>
+    </div>
+   
+</body>
+</html>
